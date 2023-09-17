@@ -4,7 +4,7 @@ roblox-ts cookie parser. rewritten in ts from [cookie.lua](https://github.com/cy
 
 ## Usage
 ```ts
-import { parse, build } from "@money-laundering-games/rbxts-cookie";
+import { parse, build } from "@rbxts/cookie";
 
 // basic usage
 assert("foo=bar" === build({foo: "bar"}));
