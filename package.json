@@ -3,12 +3,16 @@
   "version": "0.0.1",
   "description": "",
   "main": "out/init.lua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/money-laundering-games/rbxts-cookie.git"
+  },
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["cookie", "roblox"],
   "author": "",
   "license": "ISC",
   "types": "out/index.d.ts",
