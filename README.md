@@ -2,6 +2,11 @@
 
 roblox-ts cookie parser. rewritten in ts from [cookie.lua](https://github.com/cyx/cookie.lua/)
 
+## Installation
+```
+npm install @rbxts/cookie
+```
+
 ## Usage
 ```ts
 import { parse, build } from "@rbxts/cookie";
