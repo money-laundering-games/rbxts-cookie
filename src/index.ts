@@ -48,10 +48,14 @@ const CODEX: CODEX_TYPE = [
 	["secure", "Secure", identity],
 ];
 
-export const build = function (dict: Map<string, string>, options: Record<string, number | string | boolean>) {
+export const build = function (
+	dict: Record<string, string>,
+	options?: Record<string, number | string | boolean>,
+): string {
 	const res = [];
+	options = options ? options : {};
 
-	for (const [k, v] of dict) {
+	for (const [k, v] of pairs(dict)) {
 		res.push(format("%s=%s", k, HttpService.UrlEncode(v)));
 	}
 
